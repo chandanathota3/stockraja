@@ -14,7 +14,7 @@
       border-left-width: 18px;
       border-left-color: red;
       border-left-style: solid;">
-      Stock RAJA
+      STOCK RAJA
     </div>
 
     <div style="display:inline-block;">
@@ -24,11 +24,11 @@
           <div style="font-family:'Segoe ui semibold';font-size:28px;cursor: pointer;">
             <a style="text-decoration: none;color: #fff;;" target="_blank"
               href="https://www.tradingview.com/symbols/NSE-{{block1.gsx$companyid.$t}}/technicals/">
-              {{block1 && block1.gsx$company && block1.gsx$company.$t | slice:0:16}}
+              {{block1 && block1.gsx$company && block1.gsx$company.$t | uppercase | slice:0:16}}
             </a>
           </div>
           <div style="font-family:'Segoe ui semibold';font-size:15px;">
-            {{block1 && block1.gsx$companyid && block1.gsx$companyid.$t}}</div>
+            {{block1 && block1.gsx$companyid && block1.gsx$companyid.$t | uppercase}}</div>
           <div style="font-family:'Segoe ui semibold';font-size:25px;">
             ${{block1 && block1.gsx$price && block1.gsx$price.$t}}
           </div>
@@ -38,7 +38,7 @@
             {{block1.gsx$gainspercent.$t  | slice:0:4}}% Probability
           </div>
           <div style="font-family:'Segoe ui semibold';font-size:35px;">
-            ${{block1 && block1.gsx$firstfib && block1.gsx$firstfib.$t  | slice:0:5}}
+            ${{block1 && block1.gsx$fifthfib && block1.gsx$fifthfib.$t  | slice:0:5}}
           </div>
         </div>
         <div style="display:inline-block;padding:15px;">
@@ -46,7 +46,7 @@
             Gains Guess
           </div>
           <div style="font-family:'Segoe ui semibold';font-size:25px;">
-            {{block1 && block1.gsx$possibleraise1 && (block1.gsx$possibleraise1.$t | slice:0:5 *noOfShares)  }}
+            {{block1 && block1.gsx$possibleraise5 && (block1.gsx$possibleraise5.$t | slice:0:5 *noOfShares)  }}
           </div>
         </div>
 
@@ -76,11 +76,11 @@
             <div style="font-family:'Segoe ui semibold';font-size:px;">
               <a style="text-decoration: none;color: #fff;;" target="_blank"
                 href="https://www.tradingview.com/symbols/NSE-{{block2.gsx$companyid.$t}}/technicals/">
-                {{block2 && block2.gsx$company && block2.gsx$company.$t| slice:0:16}}
+                {{block2 && block2.gsx$company && block2.gsx$company.$t | uppercase | slice:0:16}}
               </a>
             </div>
             <div style="font-family:'Segoe ui semibold';font-size:12px;">
-              {{block2 && block2.gsx$companyid && block2.gsx$companyid.$t}}</div>
+              {{block2 && block2.gsx$companyid && block2.gsx$companyid.$t | uppercase}}</div>
             <div style="font-family:'Segoe ui semibold';font-size:15px;">
               ${{block2 && block2.gsx$price && block2.gsx$price.$t}}
             </div>
@@ -90,7 +90,7 @@
               {{block2.gsx$gainspercent.$t  | slice:0:4}}% Probability
             </div>
             <div style="font-family:'Segoe ui semibold';font-size:15px;">
-              ${{block2 && block2.gsx$firstfib && block2.gsx$firstfib.$t   | slice:0:5}}
+              ${{block2 && block2.gsx$fourthfib && block2.gsx$fourthfib.$t   | slice:0:5}}
             </div>
           </div>
           <div style="display:inline-block;padding:15px;">
@@ -98,7 +98,7 @@
               Gains Guess
             </div>
             <div style="font-family:'Segoe ui semibold';font-size:15px;">
-              ${{block2 && block2.gsx$possibleraise1 && block2.gsx$possibleraise1.$t   | slice:0:5 * noOfShares}}
+              ${{block2 && block2.gsx$possibleraise5 && block2.gsx$possibleraise5.$t   | slice:0:5 * noOfShares}}
             </div>
           </div>
           <div style="font-family: 'sego ui light';padding-top: 10px;padding-left: 5px;">
@@ -125,11 +125,11 @@
               <a style="text-decoration: none;color: #fff;;" target="_blank"
                 href="https://www.tradingview.com/symbols/NSE-{{block3.gsx$companyid.$t}}/technicals/">
 
-                {{block3 && block3.gsx$company && block3.gsx$company.$t| slice:0:16}}
+                {{block3 && block3.gsx$company && block3.gsx$company.$t | uppercase | slice:0:16}}
               </a>
             </div>
             <div style="font-family:'Segoe ui semibold';font-size:12px;">
-              {{block3 && block3.gsx$companyid && block3.gsx$companyid.$t}}</div>
+              {{block3 && block3.gsx$companyid && block3.gsx$companyid.$t | uppercase}}</div>
             <div style="font-family:'Segoe ui semibold';font-size:15px;">
               {{block3 && block3.gsx$price && block3.gsx$price.$t}} RS
             </div>
@@ -139,7 +139,7 @@
               {{block3.gsx$gainspercent.$t  | slice:0:4}}% Probability
             </div>
             <div style="font-family:'Segoe ui semibold';font-size:15px;">
-              ${{block3 && block3.gsx$firstfib && block3.gsx$firstfib.$t  | slice:0:5}}
+              ${{block3 && block3.gsx$fourthfib && block3.gsx$fourthfib.$t  | slice:0:5}}
             </div>
           </div>
           <div style="display:inline-block;padding:15px;">
@@ -147,7 +147,7 @@
               Gains Guess
             </div>
             <div style="font-family:'Segoe ui semibold';font-size:15px;">
-              ${{block3 && block3.gsx$possibleraise1 && block3.gsx$possibleraise1.$t | slice:0:5 * noOfShares}}
+              ${{block3 && block3.gsx$possibleraise5 && block3.gsx$possibleraise5.$t | slice:0:5 * noOfShares}}
             </div>
           </div>
           <div style="font-family: 'sego ui light';padding-top: 10px;padding-left: 5px;">
@@ -176,11 +176,11 @@
               <a style="text-decoration: none;color: #fff;;" target="_blank"
                 href="https://www.tradingview.com/symbols/NSE-{{block4.gsx$companyid.$t}}/technicals/">
 
-                {{block4 && block4.gsx$company && block4.gsx$company.$t| slice:0:16}}
+                {{block4 && block4.gsx$company && block4.gsx$company.$t | uppercase | slice:0:16}}
               </a>
             </div>
             <div style="font-family:'Segoe ui semibold';font-size:12px;">
-              {{block4 && block4.gsx$companyid && block4.gsx$companyid.$t}}</div>
+              {{block4 && block4.gsx$companyid && block4.gsx$companyid.$t | uppercase}}</div>
             <div style="font-family:'Segoe ui semibold';font-size:15px;">
               ${{block4 && block4.gsx$price && block4.gsx$price.$t  | slice:0:5}}
             </div>
@@ -190,7 +190,7 @@
               {{block4.gsx$gainspercent.$t  | slice:0:4}}% Probability
             </div>
             <div style="font-family:'Segoe ui semibold';font-size:15px;">
-              ${{block4 && block4.gsx$firstfib && block4.gsx$firstfib.$t  | slice:0:5}}
+              ${{block4 && block4.gsx$fourthfib && block4.gsx$fourthfib.$t  | slice:0:5}}
             </div>
           </div>
           <div style="display:inline-block;padding:15px;">
@@ -198,7 +198,7 @@
               Gains Guess
             </div>
             <div style="font-family:'Segoe ui semibold';font-size:15px;">
-              ${{block4 && block4.gsx$possibleraise1 && (block4.gsx$possibleraise1.$t  | slice:0:5 * noOfShares)}}
+              ${{block4 && block4.gsx$possibleraise5 && (block4.gsx$possibleraise5.$t  | slice:0:5 * noOfShares)}}
             </div>
           </div>
 
@@ -226,11 +226,11 @@
               <a style="text-decoration: none;color: #fff;;" target="_blank"
                 href="https://www.tradingview.com/symbols/NSE-{{block5.gsx$companyid.$t}}/technicals/">
 
-                {{block5 && block5.gsx$company && block5.gsx$company.$t | slice:0:16}}
+                {{block5 && block5.gsx$company && block5.gsx$company.$t | uppercase | slice:0:16}}
               </a>
             </div>
             <div style="font-family:'Segoe ui semibold';font-size:12px;">
-              {{block5 && block5.gsx$companyid && block5.gsx$companyid.$t}}</div>
+              {{block5 && block5.gsx$companyid && block5.gsx$companyid.$t | uppercase}}</div>
             <div style="font-family:'Segoe ui semibold';font-size:15px;">
               ${{block5 && block5.gsx$price && block5.gsx$price.$t | slice:0:5}}
             </div>
@@ -240,7 +240,7 @@
               {{block5.gsx$gainspercent.$t  | slice:0:4}}% Probability
             </div>
             <div style="font-family:'Segoe ui semibold';font-size:15px;">
-              ${{block5 && block5.gsx$firstfib && block5.gsx$firstfib.$t| slice:0:5}}
+              ${{block5 && block5.gsx$fourthfib && block5.gsx$fourthfib.$t| slice:0:5}}
             </div>
           </div>
           <div style="display:inline-block;padding:15px;">
@@ -248,7 +248,7 @@
               Gains Guess
             </div>
             <div style="font-family:'Segoe ui semibold';font-size:15px;">
-              ${{(block5.gsx$possibleraise1.$t| slice:0:5 *noOfShares) }}
+              ${{(block5.gsx$possibleraise5.$t| slice:0:5 *noOfShares) }}
             </div>
           </div>
 
@@ -279,7 +279,7 @@
     style="overflow: auto; max-height: 90%; font-family:'segoe ui';padding:10px;border:solid;border-width:thin;border-color:gray;height:auto;width:300px;position: absolute;right:15px;top:20px;">
     <div style="padding:10px;font-family: 'segoe ui semibold';font-size: 20px;">Watch List</div>
     <div style="padding:10px;" *ngFor="let item of watchlist">
-      <span style="font-family: 'segoe ui semibold';">{{item.gsx$companyid.$t}} - ${{item.gsx$price.$t}}</span>
+      <span style="font-family: 'segoe ui semibold';">{{item.gsx$companyid.$t | uppercase}} - ${{item.gsx$price.$t}}</span>
       <br>Volume: <span style="font-family: 'segoe ui semibold';">{{item.gsx$volume.$t}}</span>
       <br><span>Probable Gain: {{item.gsx$possibleraise1.$t | slice:0:5 }} ( {{item.gsx$gainspercent.$t  | slice:0:4}}%
         )</span>
