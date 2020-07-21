@@ -21,15 +21,15 @@ export class AppComponent implements OnInit {
   watchlist = [];
   maxPrice = 500;
   // tslint:disable-next-line: max-line-length
-  block1 = { gsx$company: { $t: '' }, gsx$companyid: { $t: '' }, gsx$price: { $t: '' }, gsx$possibleraise1: { $t: 0 }, gsx$possibleraise5: { $t: 0 }, gsx$firstfib: { $t: 0 }, gsx$secondfib: { $t: 0 }, gsx$thirdfib: { $t: 0 }, gsx$fourthfib: { $t: 0 }, gsx$fifthfib: { $t: 0 }, gsx$strengthpercent: { $t: '' }, gsx$gainspercent: { $t: '' } };
+  block1 = { gsx$company: { $t: '' }, gsx$companyid: { $t: '' }, gsx$price: { $t: '' }, gsx$possibleraise1: { $t: 0 }, gsx$possibleraise5: { $t: 0 }, gsx$firstfib: { $t: 0 }, gsx$secondfib: { $t: 0 }, gsx$thirdfib: { $t: 0 }, gsx$fourthfib: { $t: 0 }, gsx$fifthfib: { $t: 0 }, gsx$strengthpercent: { $t: '' }, gsx$gainspercent: { $t: '' }, gsx$volume: { $t: 0 } };
   // tslint:disable-next-line: max-line-length
-  block2 = { gsx$company: { $t: '' }, gsx$companyid: { $t: '' }, gsx$price: { $t: '' }, gsx$possibleraise1: { $t: 0 }, gsx$possibleraise5: { $t: 0 }, gsx$firstfib: { $t: 0 }, gsx$secondfib: { $t: 0 }, gsx$thirdfib: { $t: 0 }, gsx$fourthfib: { $t: 0 }, gsx$fifthfib: { $t: 0 }, gsx$strengthpercent: { $t: '' }, gsx$gainspercent: { $t: '' } };
+  block2 = { gsx$company: { $t: '' }, gsx$companyid: { $t: '' }, gsx$price: { $t: '' }, gsx$possibleraise1: { $t: 0 }, gsx$possibleraise5: { $t: 0 }, gsx$firstfib: { $t: 0 }, gsx$secondfib: { $t: 0 }, gsx$thirdfib: { $t: 0 }, gsx$fourthfib: { $t: 0 }, gsx$fifthfib: { $t: 0 }, gsx$strengthpercent: { $t: '' }, gsx$gainspercent: { $t: '' }, gsx$volume: { $t: 0 }  };
   // tslint:disable-next-line: max-line-length
-  block3 = { gsx$company: { $t: '' }, gsx$companyid: { $t: '' }, gsx$price: { $t: '' }, gsx$possibleraise1: { $t: 0 }, gsx$possibleraise5: { $t: 0 }, gsx$firstfib: { $t: 0 }, gsx$secondfib: { $t: 0 }, gsx$thirdfib: { $t: 0 }, gsx$fourthfib: { $t: 0 }, gsx$fifthfib: { $t: 0 }, gsx$strengthpercent: { $t: '' }, gsx$gainspercent: { $t: '' } };
+  block3 = { gsx$company: { $t: '' }, gsx$companyid: { $t: '' }, gsx$price: { $t: '' }, gsx$possibleraise1: { $t: 0 }, gsx$possibleraise5: { $t: 0 }, gsx$firstfib: { $t: 0 }, gsx$secondfib: { $t: 0 }, gsx$thirdfib: { $t: 0 }, gsx$fourthfib: { $t: 0 }, gsx$fifthfib: { $t: 0 }, gsx$strengthpercent: { $t: '' }, gsx$gainspercent: { $t: '' }, gsx$volume: { $t: 0 }  };
   // tslint:disable-next-line: max-line-length
-  block4 = { gsx$company: { $t: '' }, gsx$companyid: { $t: '' }, gsx$price: { $t: '' }, gsx$possibleraise1: { $t: 0 }, gsx$possibleraise5: { $t: 0 }, gsx$firstfib: { $t: 0 }, gsx$secondfib: { $t: 0 }, gsx$thirdfib: { $t: 0 }, gsx$fourthfib: { $t: 0 }, gsx$fifthfib: { $t: 0 }, gsx$strengthpercent: { $t: '' }, gsx$gainspercent: { $t: '' } };
+  block4 = { gsx$company: { $t: '' }, gsx$companyid: { $t: '' }, gsx$price: { $t: '' }, gsx$possibleraise1: { $t: 0 }, gsx$possibleraise5: { $t: 0 }, gsx$firstfib: { $t: 0 }, gsx$secondfib: { $t: 0 }, gsx$thirdfib: { $t: 0 }, gsx$fourthfib: { $t: 0 }, gsx$fifthfib: { $t: 0 }, gsx$strengthpercent: { $t: '' }, gsx$gainspercent: { $t: '' }, gsx$volume: { $t: 0 }  };
   // tslint:disable-next-line: max-line-length
-  block5 = { gsx$company: { $t: '' }, gsx$companyid: { $t: '' }, gsx$price: { $t: '' }, gsx$possibleraise1: { $t: 0 }, gsx$possibleraise5: { $t: 0 }, gsx$firstfib: { $t: 0 }, gsx$secondfib: { $t: 0 }, gsx$thirdfib: { $t: 0 }, gsx$fourthfib: { $t: 0 }, gsx$fifthfib: { $t: 0 }, gsx$strengthpercent: { $t: '' }, gsx$gainspercent: { $t: '' } };
+  block5 = { gsx$company: { $t: '' }, gsx$companyid: { $t: '' }, gsx$price: { $t: '' }, gsx$possibleraise1: { $t: 0 }, gsx$possibleraise5: { $t: 0 }, gsx$firstfib: { $t: 0 }, gsx$secondfib: { $t: 0 }, gsx$thirdfib: { $t: 0 }, gsx$fourthfib: { $t: 0 }, gsx$fifthfib: { $t: 0 }, gsx$strengthpercent: { $t: '' }, gsx$gainspercent: { $t: '' }, gsx$volume: { $t: 0 }  };
 
   finalresult: any = [];
   url: any = 'https://spreadsheets.google.com/feeds/list/19uzbY-l1vZHbjtbHE41j4i5nbWKtpf0N3kZbCA58URU/od6/public/values?alt=json';
@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
       (result: any) => {
         this.finalresult = result;
         this.trues = this.finalresult.feed.entry.filter(k => {
-          return k.gsx$status.$t === 'TRUE' && k.gsx$price.$t <= maxPrice;
+          return k.gsx$status.$t === 'TRUE' && k.gsx$volume.$t > 10000000;
         });
 
         this.sortedEntries = this.sortDataByGains(); // sorting
